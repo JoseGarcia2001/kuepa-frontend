@@ -1,6 +1,8 @@
 import io from 'socket.io-client'
 
-const Socket = io('http://localhost:3001', {
+const URL = 'https://kuepa-backend.herokuapp.com'
+
+const Socket = io(URL, {
   transports: ['websocket', 'polling', 'flashsocket']
 })
 
